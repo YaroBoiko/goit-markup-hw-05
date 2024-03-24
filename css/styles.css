@@ -583,7 +583,7 @@ body {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
 
-  pointer-events: auto;
+  pointer-events: none;
   opacity: 0;
   visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -591,7 +591,7 @@ body {
 }
 
 .backdrop.is-open {
-  pointer-events: none;
+  pointer-events: auto;
   opacity: 1;
   visibility: visible;
 }
@@ -659,7 +659,7 @@ body {
 }
 
 .feedback-form-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .feedback-form-label {
@@ -740,6 +740,7 @@ body {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+
 .feedback-form-own-checkbox {
   display: inline-flex;
   justify-content: center;
@@ -764,17 +765,13 @@ body {
   color: #4d5ae5;
 }
 
-.feedback-form-privacy-checkbox:checked
-  + .feedback-form-checkbox-label
-  .feedback-form-own-checkbox {
+.feedback-form-privacy-checkbox:checked + .feedback-form-checkbox-label span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.feedback-form-privacy-checkbox:focus
-  + .feedback-form-checkbox-label
-  .feedback-form-own-checkbox {
+.feedback-form-privacy-checkbox:focus + .feedback-form-checkbox-label span {
   border-color: #4d5ae5;
 }
 
