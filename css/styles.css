@@ -659,6 +659,10 @@ body {
 }
 
 .feedback-form-wrapper {
+  margin-bottom: 8px;
+}
+
+.textarea {
   margin-bottom: 16px;
 }
 
