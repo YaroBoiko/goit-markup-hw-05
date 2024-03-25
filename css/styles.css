@@ -527,7 +527,6 @@ body {
   letter-spacing: 0.04em;
   color: #fff;
   padding: 8px 16px;
-  margin-right: 24px;
 
   border: 1px solid #fff;
   border-radius: 4px;
@@ -676,7 +675,6 @@ body {
 }
 .feedback-form-input-wrapper {
   position: relative;
-  margin-bottom: 16px;
 }
 
 .feedback-form-input {
@@ -756,7 +754,6 @@ body {
   cursor: pointer;
   fill: transparent;
   margin-right: 8px;
-  margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -769,13 +766,17 @@ body {
   color: #4d5ae5;
 }
 
-.feedback-form-privacy-checkbox:checked + .feedback-form-checkbox-label span {
+.feedback-form-privacy-checkbox:checked
+  + .feedback-form-checkbox-label
+  .feedback-form-own-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.feedback-form-privacy-checkbox:focus + .feedback-form-checkbox-label span {
+.feedback-form-privacy-checkbox:focus
+  + .feedback-form-checkbox-label
+  .feedback-form-own-checkbox {
   border-color: #4d5ae5;
 }
 
